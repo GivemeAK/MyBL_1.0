@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"mybl_1.0\startup_stm32f103xe.o"
+"mybl_1.0\main.o"
+"mybl_1.0\gpio.o"
+"mybl_1.0\usart.o"
+"mybl_1.0\stm32f1xx_it.o"
+"mybl_1.0\stm32f1xx_hal_msp.o"
+"mybl_1.0\flash.o"
+"mybl_1.0\stm32f1xx_hal_gpio_ex.o"
+"mybl_1.0\stm32f1xx_hal_tim.o"
+"mybl_1.0\stm32f1xx_hal_tim_ex.o"
+"mybl_1.0\stm32f1xx_hal_uart.o"
+"mybl_1.0\stm32f1xx_hal.o"
+"mybl_1.0\stm32f1xx_hal_rcc.o"
+"mybl_1.0\stm32f1xx_hal_rcc_ex.o"
+"mybl_1.0\stm32f1xx_hal_gpio.o"
+"mybl_1.0\stm32f1xx_hal_dma.o"
+"mybl_1.0\stm32f1xx_hal_cortex.o"
+"mybl_1.0\stm32f1xx_hal_pwr.o"
+"mybl_1.0\stm32f1xx_hal_flash.o"
+"mybl_1.0\stm32f1xx_hal_flash_ex.o"
+"mybl_1.0\stm32f1xx_hal_exti.o"
+"mybl_1.0\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "MyBL_1.0\MyBL_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MyBL_1.map" -o MyBL_1.0\MyBL_1.0
